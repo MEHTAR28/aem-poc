@@ -235,3 +235,8 @@ main .section[data-section-status='initialized'] {
 main .section.highlight {
   background-color: var(--highlight-background-color);
 }
+
+/* 2 Columns Block */
+.columns-container {
+    background-image: url(../icons/background_image.png);
+}
