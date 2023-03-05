@@ -239,6 +239,7 @@ main .section.highlight {
 /* 2 Columns Block */
 .columns-container.columns-background {
     background-image: url(../icons/background_image.png);
-    background-position: bottom right;
+    background-position-x: right;
+    background-position-y: 90%;
     background-repeat: no-repeat;
 }
