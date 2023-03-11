@@ -70,7 +70,7 @@
 }
 
 main .section.columns-container.columns-background {
-    background: url(../../assets/images/Side_Petals.png) no-repeat right 80%;
+    background: url("../../assets/images/Side_Petals.png") no-repeat right 80%;
     padding: 64px 128px;
 }
 
@@ -85,9 +85,6 @@ main .section.columns-container.columns-background {
 
     .columns.information-block > div > div:first-child {
         text-align: center;
-    }
-
-    .columns.information-block > div > div:first-child {
         max-width: none;
     }
 
