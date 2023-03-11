@@ -23,3 +23,85 @@
         margin-left: unset;
     }
 }
+
+/* 2 Column Information Block below Hero-Banner */
+
+.columns.information-block > div {
+    column-gap: 24px;
+}
+
+.columns.information-block > div > div {
+    margin-left: 0;
+}
+
+.columns.information-block img {
+    width: auto;
+    max-width: 100%;
+}
+
+.columns.information-block div p {
+    font-size: var(--body-font-size-s);
+    line-height: 28px;
+    margin: 24px 0;
+    color: #383838;
+}
+
+.columns.information-block div p:first-child {
+    margin-top: 0;
+}
+
+.columns.information-block div h2 {
+    position: relative;
+    font-size: 36px;
+    color: #2B5462;
+    line-height: 40px;
+    margin-top: 0;
+}
+
+.columns.information-block div h2::after {
+    position: absolute;
+    content: "";
+    bottom: -24px;
+    left: 0;
+    display: block;
+    height: 2px;
+    width: 150px;
+    background-color: #E6427B;
+}
+
+main .section.columns-container.columns-background {
+    background: url("../../assets/images/Side_Petals.png") no-repeat right 80%;
+    padding: 64px 128px;
+}
+
+.columns.information-block > div > div:first-child {
+    max-width: 40%;
+}
+
+@media screen and (max-width: 1024px) {
+    .columns.information-block > div {
+        flex-direction: column;
+    }
+
+    .columns.information-block > div > div:first-child {
+        text-align: center;
+        max-width: none;
+    }
+
+    main .section.columns-container.columns-background {
+        background-position-y: center;
+        padding: 64px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    main .section.columns-container.columns-background {
+        background: none;
+        padding: 64px 16px;
+    }
+
+    .columns.information-block div h2 {
+        font-size: 28px;
+        line-height: 30px;
+    }
+}
